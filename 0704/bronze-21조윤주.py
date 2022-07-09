@@ -6,7 +6,7 @@ for i in range(n):
     x,y=map(int,sys.stdin.readline().split())
     x%=10
     if x!=0:
-        jari=[]
+        jari = []
         temp=x
         while jari==[] or temp!=jari[0]:
             jari.append(temp)
