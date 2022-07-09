@@ -1,7 +1,7 @@
 // boj 1009
 // 나머지에 해당하는 번호에서 작업 수행
 // 다만 제곱 연산을 하기에는 낭비인 것 같음
-
+// 커밋 메세지 수정
 #include <iostream>
 
 using namespace std;
