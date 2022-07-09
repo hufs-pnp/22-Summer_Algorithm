@@ -1,4 +1,4 @@
-// Example program
+// 커밋 메세지 수정
 #include <iostream>
 #include <string>
 
