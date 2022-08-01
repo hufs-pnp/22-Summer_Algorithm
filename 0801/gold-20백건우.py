@@ -18,14 +18,12 @@ def find(x):
 N, M = map(int, input().split())
 edges = []
 for _ in range(M):
-    A, B, C = map(int, input().split())
-    edges.append([C, A, B])
-edges.sort()
+    edges.append([int(m) for m in input().split()])
+edges.sort(key = lambda x: x[2])
 parent = list(range(N+1))
 cost = []
-for C, A, B in edges:
+for A, B, C in edges:
     if find(A) != find(B):
-        union(A, B)
         cost.append(C)
+        union(A, B)
 print(sum(cost[:-1]))
-print(cost)
